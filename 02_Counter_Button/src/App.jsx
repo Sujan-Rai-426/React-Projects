@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      
+    
       <h1> Simple Counter button  </h1>
       <h2>React Project 2 </h2>
       <br />
