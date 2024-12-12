@@ -10,7 +10,7 @@ function Bg_Changer() {
 
     const [color, setColor] = useState('Gray')
 
-    return (
+    return ( 
 
         <div className='Container Bg_Container' style={{background : color}}>
 
