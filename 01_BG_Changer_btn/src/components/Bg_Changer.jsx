@@ -15,6 +15,7 @@ function Bg_Changer() {
         <div className='Container Bg_Container' style={{background : color}}>
 
             <div className='Info'>
+                <h1>React Project 1</h1>
                 <h3> Background Color Changing Buttons </h3> 
                 <p> Simple React Project - Learning Purpose</p>
             </div>

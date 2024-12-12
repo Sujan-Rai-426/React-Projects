@@ -1,0 +1,33 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+.Upper-div{
+  display: flex;
+  gap: .3vw;
+}
+
+.Upper-div input{
+  width: 31vw;
+  border-radius: .6rem;
+  padding: 0 1vw;
+}
+
+.btn{
+  background: blue;
+  color: white;
+  transition: .1s;
+}
+.btn:hover{
+  background: rgb(0, 0, 96);
+}
+
+.lower-div{
+  display: flex;
+  gap: 2.5vw;
+}
