@@ -73,7 +73,7 @@ function TextForm(props) {
                 <textarea  value={text} onChange={handle_change} style={{ color:'red' }} ref={textRef} className="form-control" id="exampleFormControlTextarea1" rows="9" ></textarea>
             </div>
 
-            {/* button div */}
+            {/* button div  */}
             <div style={{ display: 'grid',  gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap :'1vw' }}>
                 <button onClick={handle_Upper_click} className="btn btn-danger"> Uppercase </button>
                 <button onClick={handle_Lower_click} className="btn btn-danger"> Lowercase </button>
