@@ -8,7 +8,7 @@ function TextForm(props) {
 
 
     // Initialize the text and setText
-    const [text, setText] = useState ("c");
+    const [text, setText] = useState ("Enter your text here to customize...");
 
     // function to handel the text change event
     const handle_change = (event) =>{
