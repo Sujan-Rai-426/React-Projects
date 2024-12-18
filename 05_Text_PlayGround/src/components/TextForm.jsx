@@ -41,7 +41,7 @@ function TextForm(props) {
 
     return (
     
-    <>
+    <div style={{minHeight: '100vh'}}>
     {/* start div container for text operation */}
         <div className = 'my-5'>
             <div style={{display: 'flex', justifyContent:'space-between'}}>
@@ -53,15 +53,15 @@ function TextForm(props) {
             </div>
             
             <div className="mb-3">
-                <textarea  value={text} onChange={handle_change} ref={textRef} className="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
+                <textarea  value={text} onChange={handle_change} ref={textRef} className="form-control" id="exampleFormControlTextarea1" rows="9" style={{color: 'red'}}></textarea>
             </div>
 
             {/* button div */}
             <div style={{ display: 'flex', gap :'2vw' }}>
                 <button onClick={handle_Upper_click} className="btn btn-danger"> Uppercase </button>
                 <button onClick={handle_Lower_click} className="btn btn-danger"> Lowercase </button>
-                <button onClick={handle_copy} className="btn btn-danger"> Copy Text </button>
-                <button onClick={handle_clear} className="btn btn-danger"> Clear Text </button>
+                <button onClick={handle_copy} className="btn btn-danger"> Copy </button>
+                <button onClick={handle_clear} className="btn btn-danger"> Clear </button>
             </div>
         </div>
     {/* end div container for text operation */}
@@ -75,7 +75,7 @@ function TextForm(props) {
             <p> <i> {text}</i> </p>
         </div>
     {/* end div container for text information */}
-    </>
+    </div>
     )
 }
 
