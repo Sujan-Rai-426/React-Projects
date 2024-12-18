@@ -15,26 +15,43 @@ function TextForm(props) {
         setText(event.target.value);
     }
 
-    // function to handle the button click events
+    //-------------- function to handle the button click events--------------
+
+    // To Upper Case
     const handle_Upper_click = () => {
         let upr_txt = text.toUpperCase()
         setText(upr_txt)
+        props.showAlert(" Text converted to Uppercase successfully...", "success") 
     }
     
+    // To Lower Case
     const handle_Lower_click = () => {
         let lwr_txt = text.toLowerCase()
         setText(lwr_txt)
+        props.showAlert(" Text converted to Lowercase successfully...", "success") 
     }
-
+    
+    // To remove extra spaCes where there is more than one spaCes
+    const handle_Extra_Spaces = () => {
+        let new_Text = text.split(/[ ]+/);
+        setText (new_Text.join(" "))
+        props.showAlert(" Extra Spaces of text removed successfully...", "success") 
+    }
+    
+    
+    // To Copy text
     const textRef = useRef(null)
     const handle_copy = () => {
         alert(" Text is copied !!! ")
         window.navigator.clipboard.writeText(text)
         textRef.current.select()
+        props.showAlert(" Text copied successfully...", "success") 
     }
-
+    
+    // To Cleare text
     const handle_clear = () => {
         setText("")
+        props.showAlert(" Text cleared successfully...", "success") 
     }
 
 
@@ -53,13 +70,14 @@ function TextForm(props) {
             </div>
             
             <div className="mb-3">
-                <textarea  value={text} onChange={handle_change} ref={textRef} className="form-control" id="exampleFormControlTextarea1" rows="9" style={{color: 'red'}}></textarea>
+                <textarea  value={text} onChange={handle_change} style={{ color:'red' }} ref={textRef} className="form-control" id="exampleFormControlTextarea1" rows="9" ></textarea>
             </div>
 
             {/* button div */}
-            <div style={{ display: 'flex', gap :'2vw' }}>
+            <div style={{ display: 'grid',  gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap :'1vw' }}>
                 <button onClick={handle_Upper_click} className="btn btn-danger"> Uppercase </button>
                 <button onClick={handle_Lower_click} className="btn btn-danger"> Lowercase </button>
+                <button onClick={handle_Extra_Spaces} className="btn btn-danger"> Manage Spaces </button>
                 <button onClick={handle_copy} className="btn btn-danger"> Copy </button>
                 <button onClick={handle_clear} className="btn btn-danger"> Clear </button>
             </div>

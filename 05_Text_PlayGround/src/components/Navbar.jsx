@@ -1,7 +1,7 @@
 
 // Manually added file for text 
 
-import React, { useState } from 'react'
+import React from 'react'
 
 function Navbar(props) {
 
@@ -13,8 +13,8 @@ function Navbar(props) {
                 <div className="container-fluid">
 
                     {/* toggle button */}
-                    <button className="btn btn-dark" onClick={props.toggleMode}>
-                            {props.myStyle.backgroundColor === '#dbd0d0' ? (<i className="bi bi-moon-fill"></i>) : (<i className="bi bi-brightness-high-fill"></i>)}
+                    <button className="btn btn-dark mx-4" onClick={props.toggleMode}>
+                            {props.myStyle.backgroundColor === 'rgb(113 159 184 / 87%)' ? (<i className="bi bi-moon-fill"></i>) : (<i className="bi bi-brightness-high-fill"></i>)}
                     </button>
 
                     <a className="navbar-brand" href="#"> {props.project} </a>
