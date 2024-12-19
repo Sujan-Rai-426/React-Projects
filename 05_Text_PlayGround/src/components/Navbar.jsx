@@ -47,7 +47,7 @@ function Navbar(props) {
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><Link className="dropdown-item" to="/password_generator"> Password Generator </Link></li>
-                                    <li><a className="dropdown-item" href="#">  Available Soon </a></li>
+                                    <li><Link className="dropdown-item" to="/">  Text Utils </Link></li>
                                 </ul>
                             </li>
 
