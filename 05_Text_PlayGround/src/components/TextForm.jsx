@@ -45,7 +45,6 @@ function TextForm(props) {
         alert(" Text is copied !!! ")
         window.navigator.clipboard.writeText(text)
         textRef.current.select()
-        props.showAlert(" Text copied successfully...", "success") 
     }
     
     // To Cleare text
@@ -58,7 +57,7 @@ function TextForm(props) {
 
     return (
     
-    <div style={{minHeight: '100vh'}}>
+    <div style={{minHeight: '90vh', paddingTop: '7vh', paddingBottom: '7vh'}}>
     {/* start div container for text operation */}
         <div className = 'my-5'>
             <div style={{display: 'flex', justifyContent:'space-between'}}>
