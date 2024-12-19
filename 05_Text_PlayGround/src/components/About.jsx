@@ -16,7 +16,7 @@ function About() {
             </button>
 
             <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                <div className="accordion-body">
+                <div className="accordion-body" style={{color : 'gray'}} >
                     <p>
                         <strong> Text Playground </strong> is a versatile text manipulation tool designed to help you effortlessly modify your text. Whether you're editing a document, preparing content for online publishing, or simply experimenting with text transformations, this tool provides an intuitive interface to get the job done. 
                             <br /> 
@@ -40,7 +40,7 @@ function About() {
             </button>
 
             <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                <div className="accordion-body">
+                <div className="accordion-body" style={{color : 'gray'}} >
                 <strong>Text Playground provides</strong> some basic features rightnow to enhance your text manipulation experience with fun.
                 <br />
                 <code><b> Currently, Text Playground offers the following key features:</b></code>
@@ -65,7 +65,7 @@ function About() {
             </button>
 
             <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                <div className="accordion-body">
+                <div className="accordion-body" style={{color : 'gray'}} >
                     <strong>Text Playground is just getting started! </strong> Future Updates and Enhancements will be consistent to Enhance your experience.
                     <br />
                     <code><b> Here are some of the exciting features we plan to add in the future: </b></code>
