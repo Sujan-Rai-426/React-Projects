@@ -57,7 +57,7 @@ function TextForm(props) {
 
     return (
     
-    <div style={{minHeight: '90vh', paddingTop: '7vh', paddingBottom: '7vh'}}>
+    <div style={{minHeight: '90vh', paddingBottom: '2vh'}}>
     {/* start div container for text operation */}
         <div className = 'my-5'>
             <div style={{display: 'flex', justifyContent:'space-between'}}>
