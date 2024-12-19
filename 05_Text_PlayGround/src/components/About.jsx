@@ -6,7 +6,7 @@ function About() {
     return (
         
 
-    <div className="accordion container" id="accordionPanelsStayOpenExample" style={{minHeight:'100vh', paddingBottom:'10vh'}}>
+    <div className="accordion container" id="accordionPanelsStayOpenExample" style={{minHeight:'100vh',  paddingTop:'5vh', paddingBottom:'10vh'}}>
 
         {/* Accordion section 1st */}
         <div className="accordion-item">
