@@ -49,6 +49,7 @@ function About() {
                     <li><strong>Convert to Lowercase:</strong> Quickly change your text to all lowercase letters for uniformity.</li>
                     <li><strong>Clear Text:</strong> Remove all content from the text area with one click to start fresh.</li>
                     <li><strong>Copy Text:</strong> Copy your formatted text to the clipboard for use elsewhere.</li>
+                    <li><strong>Remove Extra spaces:</strong> Help to remove the spaces where there is more than one space between the words..</li>
                     <li><strong>Word Count & Character Count:</strong>  Get real-time statistics for your text.</li>
                 </ul>
                     Each feature is designed with user simplicity in mind, ensuring a seamless and productive experience.
