@@ -37,7 +37,7 @@ function Footer() {
 
             <footer style={footerStyle}>
                 <div style={contentStyle}>
-                    <p>© 2024 Text Playground by Your Name. All Rights Reserved.</p>
+                    <p>© 2024 Text Playground by Sujan Rai. All Rights Reserved.</p>
                     <div style={iconContainerStyle}>
                         {/* Social Media Links */}
                         <a href="https://www.facebook.com/sujan.rai.92202/" target="_blank" rel="noopener noreferrer" style={iconStyle}>
