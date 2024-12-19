@@ -38,6 +38,19 @@ function Navbar(props) {
                             <li className="nav-item">
                             <a className="nav-link" href="https://www.sujan140.com.np">Portfolio</a>
                             </li>
+
+
+                            {/* Dropdown Features  */}
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><Link className="dropdown-item" to="/password_generator"> Password Generator </Link></li>
+                                    <li><a className="dropdown-item" href="#">  Available Soon </a></li>
+                                </ul>
+                            </li>
+
                         </ul>
                         
                         {/* SEARcH BAR */}

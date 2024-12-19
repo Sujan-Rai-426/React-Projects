@@ -8,6 +8,7 @@ import AlertMsg from './components/AlertMsg'
 import About from './components/About';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from './components/Footer';
+import Password_Generator from './components/Password_Generator';
 
 
 function App() {
@@ -70,6 +71,8 @@ function App() {
                   <Route exact path="/" element={ <TextForm showAlert={showAlert} heading='Enter the text in below Text PlayGround' /> } />
                     {/* when people visit path '/about'  --> About */}
                   <Route exact path="/about" element={ <About /> } />
+                    {/* when people visit path '/password_generator'  --> Password_Generator */}
+                  <Route exact path="/password_generator" element={ <Password_Generator /> } />
 
               </Routes>
           </div>
