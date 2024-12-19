@@ -52,15 +52,15 @@ function Password_Generator() {
 
     return (
 
-        <div className='container my-5' style={{minHeight: '80vh', display: 'flex', flexDirection: 'column', alignItems:'center'}}>
+        <div className='container my-5' style={{minHeight: '70vh', display: 'flex', flexDirection: 'column', alignItems:'center'}}>
 
                 <h2>Random Password Generator</h2>
                 <br />
 
                 {/* div for password label and copy button */}
             <div style={{gap: '1vw', display:'flex'}}>
-                <input type="text" ref={passwordRef}  placeholder='Password' readOnly value={password} style={{minWidth:'40vw', borderRadius: '0.5rem', padding: '1vh',}} />
-                <button onClick={copyPasswordToClipboard} style={{padding: '0 1vw', borderRadius: '.7rem'}} className='btn btn-danger'> Copy </button>
+                <input type="text" ref={passwordRef}  placeholder='Password' readOnly value={password} style={{width:'75vw', borderRadius: '0.5rem', padding: '1vh',}} />
+                <button onClick={copyPasswordToClipboard} style={{padding: '0 2vw', borderRadius: '.7rem'}} className='btn btn-danger'> Copy </button>
             </div>
 
 
