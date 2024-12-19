@@ -68,7 +68,7 @@ function App() {
               <Routes>
 
                     {/* When People visit default '/'  -->TextForm or Home*/}
-                  <Route exact path="/" element={ <TextForm myStyle={myStyle} showAlert={showAlert} heading='Enter the text in below Text PlayGround' /> } />
+                  <Route exact path="/" element={ <TextForm myStyle={myStyle} showAlert={showAlert} heading='Enter the text in below' /> } />
                     {/* when people visit path '/about'  --> About */}
                   <Route exact path="/about" element={ <About myStyle={myStyle} /> } />
                     {/* when people visit path '/password_generator'  --> Password_Generator */}

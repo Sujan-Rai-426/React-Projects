@@ -61,7 +61,7 @@ function TextForm(props) {
     {/* start div container for text operation */}
         <div className = 'my-5'>
             <div style={{display: 'flex', justifyContent:'space-between'}}>
-                <h3> {props.heading} </h3>
+                <h4> {props.heading} </h4>
                 {/* <div>
                     <label htmlFor="exampleColorInput" className="form-label"> <h5> Color picker </h5></label>
                     <input type="color" className="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color"></input>
@@ -69,7 +69,7 @@ function TextForm(props) {
             </div>
             
             <div className="mb-3">
-                <textarea  value={text} onChange={handle_change} style={props.myStyle.backgroundColor === 'rgb(28 38 36 / 89%)'? {backgroundColor: '#282424de', color: 'white'} : {backgroundColor: 'rgb(200 212 224)', color: 'black'}} ref={textRef} className="form-control" id="exampleFormControlTextarea1" rows="9" ></textarea>
+                <textarea  value={text} onChange={handle_change} style={props.myStyle.backgroundColor === 'rgb(28 38 36 / 89%)'? {backgroundColor: '#282424de', color: 'white'} : {backgroundColor: 'rgb(200 212 224)', color: 'black'}} ref={textRef} className="form-control" placeholder='Enter Text here...' id="exampleFormControlTextarea1" rows="9" > </textarea>
             </div>
 
             {/* button div  */}
