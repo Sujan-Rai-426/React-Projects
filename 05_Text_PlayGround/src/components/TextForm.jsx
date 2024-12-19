@@ -69,7 +69,7 @@ function TextForm(props) {
             </div>
             
             <div className="mb-3">
-                <textarea  value={text} onChange={handle_change} style={{ color:'red' }} ref={textRef} className="form-control" id="exampleFormControlTextarea1" rows="9" ></textarea>
+                <textarea  value={text} onChange={handle_change} style={props.myStyle.backgroundColor === 'rgb(28 38 36 / 89%)'? {backgroundColor: '#282424de', color: 'white'} : {backgroundColor: 'rgb(200 212 224)', color: 'black'}} ref={textRef} className="form-control" id="exampleFormControlTextarea1" rows="9" ></textarea>
             </div>
 
             {/* button div  */}
@@ -87,7 +87,7 @@ function TextForm(props) {
     {/* start div container for text information */}
         <div className="container">
             <h3> Text Summary </h3>
-            <p> Total word = <b> {text.split(" ").length} </b>, Total characters in text = <b> {text.length} </b></p>
+            <p> Total word = <b> {text.split(" ").filter((element) => {return element.length !== 0}).length} </b>, Total characters in text = <b> {text.length} </b></p>
             <h3> Preview </h3>
             <p> <i> {text}</i> </p>
         </div>

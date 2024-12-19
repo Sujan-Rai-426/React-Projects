@@ -30,8 +30,8 @@ function App() {
 
            // for toggle mode  initialize myStyle
       const [myStyle, setMyStyle] = useState({
-          color: 'black',
-          backgroundColor : 'rgb(113 159 184 / 87%)',
+          color: 'white',
+          backgroundColor: 'rgb(28 38 36 / 89%)',
       })
   
       // funCtion to handle toggle button
@@ -68,9 +68,9 @@ function App() {
               <Routes>
 
                     {/* When People visit default '/'  -->TextForm or Home*/}
-                  <Route exact path="/" element={ <TextForm showAlert={showAlert} heading='Enter the text in below Text PlayGround' /> } />
+                  <Route exact path="/" element={ <TextForm myStyle={myStyle} showAlert={showAlert} heading='Enter the text in below Text PlayGround' /> } />
                     {/* when people visit path '/about'  --> About */}
-                  <Route exact path="/about" element={ <About /> } />
+                  <Route exact path="/about" element={ <About myStyle={myStyle} /> } />
                     {/* when people visit path '/password_generator'  --> Password_Generator */}
                   <Route exact path="/password_generator" element={ <Password_Generator /> } />
 
